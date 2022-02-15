@@ -381,7 +381,7 @@ export default {
 <style>
 .task-row {
   overflow: scroll;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .task-column {
   width: 300px;

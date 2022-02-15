@@ -18,7 +18,7 @@
     </div>
     <div class="mt-5 rounded-3 task-box">
       <h6 class="description">Record yourself talking about the day</h6>
-      <div class="d-flex justify-content-between mt-2 align-items-center">
+      <div class="d-flex justify-content-between mt-3 align-items-center">
         <h6># <span style="color: #fca3a9">youtube</span></h6>
         <div>
           <label class="main">
@@ -28,9 +28,9 @@
         </div>
       </div>
     </div>
-    <div class="rounded-3 task-box">
+    <div class="rounded-3 task-box mt-4">
       <h6 class="description">Schedule newsletter</h6>
-      <div class="d-flex justify-content-between mt-2 align-items-center">
+      <div class="d-flex justify-content-between mt-3 align-items-center">
         <h6># <span style="color: #fca3a9">youtube</span></h6>
         <div>
           <label class="main">

@@ -39,20 +39,6 @@ export default {
 };
 </script>
 <style scoped>
-.day-contain {
-  width: 255px;
-  height: 158px;
-}
-.date {
-  font-size: 14px;
-  color: gray;
-}
-.round {
-  width: 64px;
-  height: 64px;
-  border-radius: 100px;
-  border: 8px solid #e5e5e5;
-}
 .add-task {
   width: 189px;
   height: 35px;
@@ -60,20 +46,5 @@ export default {
   background: #f9cfa8;
   border: none;
   color: white;
-}
-.description {
-  font-size: 14px;
-}
-.custom-checkbox {
-  width: 20px;
-  height: 20px;
-  background: #dfdfdf;
-  border-radius: 6px;
-  border: none;
-}
-.task-box {
-  padding: 17px;
-  background: #f9f9f9;
-  border-radius: 8.8913px;
 }
 </style>

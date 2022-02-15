@@ -5,8 +5,7 @@
         <h5 class="fw-bold">Friday</h5>
         <h6 class="date">February 4</h6>
         <div class="d-flex mt-2">
-          <div>
-            <img src="../assets/red.png" alt="" />
+          <div class="red-line">
           </div>
           <h6 class="ms-2 date mb-0 mt-1" style="color: red">Shutdown</h6>
         </div>
@@ -48,27 +47,17 @@
 </template>
 <script>
 export default {
-  props: {},
+  props: {
+    data: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
   computed: {},
   methods: {},
 };
 </script>
 <style scoped>
-.day-contain {
-  width: 255px;
-  height: 158px;
-  background: #f9f9f9;
-  border-radius: 10px;
-}
-.task-box {
-  padding: 17px;
-  background: #f9f9f9;
-  border-radius: 8.8913px;
-}
-.date {
-  font-size: 14px;
-  color: gray;
-}
 .round {
   width: 64px;
   height: 64px;
@@ -82,8 +71,5 @@ export default {
   background: #2354e9;
   border: none;
   color: white;
-}
-.description {
-  font-size: 14px;
 }
 </style>

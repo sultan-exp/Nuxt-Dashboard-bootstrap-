@@ -1,0 +1,318 @@
+.task-row {
+  overflow: scroll;
+  /* white-space: nowrap; */
+}
+.task-column {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+.header {
+  height: 149px;
+  padding: 0 49px 0 39px;
+}
+.logo {
+  width: 53px;
+  height: 32px;
+}
+.channel {
+  width: 100%;
+  padding-left: 37px;
+  background-color: #ff4c58;
+  background-image: linear-gradient(to bottom right, #fcf0f4, #f6f7fb);
+  border-radius: 15px;
+}
+.red-gradient {
+  background-image: linear-gradient(to bottom right, #fcf0f4, #f6f7fb);
+  border-radius: 15px;
+}
+.blue-gradient {
+  background-image: linear-gradient(to bottom, #f5f7ff, #ffeff0);
+  border-radius: 15px;
+}
+.allColor {
+  color: #5979df;
+}
+.plus {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #5979df;
+  color: white;
+  border: none;
+}
+.schedule {
+  width: 80%;
+  background-color: #ff4c58;
+  background-image: linear-gradient(to bottom right, #fcf0f4, #f6f7fb);
+  border-radius: 15px;
+}
+.contact {
+  width: 77px;
+}
+.schedule-item {
+  width: 59.95px;
+}
+.task-calendar {
+  width: 300px;
+  height: 48px;
+  background: #eceffe;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+.btn-task {
+  background: #2354e9;
+  border-radius: 10px;
+  width: 153px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+.vc-container {
+  background-image: linear-gradient(to bottom right, #fcf0f4, #f6f7fb);
+  border: none;
+}
+.main {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.geekmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #dfdfdf;
+  border-radius: 6px;
+}
+
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main input:checked ~ .geekmark:after {
+  display: block;
+}
+
+.main .geekmark:after {
+  left: 7px;
+  bottom: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid gray;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+div.vc-highlights + span.vc-day-content {
+  color: #5979df !important;
+  font-weight: normal !important;
+}
+.vc-highlight {
+  background: #dbddfb !important;
+}
+ul {
+  list-style-type: none;
+}
+.day-contain {
+  width: 255px;
+  height: 158px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.date {
+  font-size: 14px;
+  color: gray;
+}
+.round {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+  border: 8px solid #e5e5e5;
+}
+.blue-round {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+  border: 8px solid #2354e9;
+}
+.task-box {
+  padding: 17px;
+  background: #f9f9f9;
+  border-radius: 8.8913px;
+}
+.description {
+  font-size: 14px;
+}
+.progress {
+  width: 64px;
+  height: 64px !important;
+  float: left;
+  line-height: 64px;
+  background: none;
+  margin: 5px 20px 20px 20px;
+  box-shadow: none;
+  position: relative;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #e5e5e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 8px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: white;
+  font-size: 14px;
+  color: black;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  margin-top: -40px;
+  top: 5%;
+  left: 5%;
+}
+
+.progress.yellow .progress-bar {
+  border-color: #fca3a9;
+}
+
+.progress.yellow .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+
+.progress.yellow .progress-left .progress-bar {
+  animation: none;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+  }
+}
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background: #dfdfdf;
+  border-radius: 6px;
+  border: none;
+}
+.red-line {
+  width: 19px;
+  height: 4px;
+  background: red;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.blue-line {
+  width: 19px;
+  height: 4px;
+  background: #2354e9;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.add-task {
+    width: 189px;
+    height: 35px;
+    border-radius: 9px;
+    background: #85e99f;
+    border: none;
+    color: white;
+  }
+.youtube {
+  color: #fca3a9;
+}

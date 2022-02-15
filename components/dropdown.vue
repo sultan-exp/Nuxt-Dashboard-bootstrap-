@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex mt-5">
       <div class="me-2">
-        <img src="../assets/dropdown.png" alt="work" />
+        <chevron-down-icon size="0.8x" class="custom-class"></chevron-down-icon>
       </div>
       <h4 class="fw-bold fs-5 mb-0">{{ data.title }}</h4>
     </div>
@@ -16,6 +16,7 @@
   </div>
 </template>
 <script>
+import { ChevronDownIcon } from 'vue-feather-icons'
 export default {
   props: {
     data: {
@@ -23,12 +24,9 @@ export default {
       default: () => ({}),
     },
   },
-  computed: {},
+  components: {
+    ChevronDownIcon
+  },
   methods: {},
 };
 </script>
-<style>
-ul {
-  list-style-type: none;
-}
-</style>
